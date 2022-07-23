@@ -16,10 +16,10 @@
     "build": "npm -prefix client run build",
     "preinstall": "cd ./backend && npm install",
     "install": "cd ./client && npm install",
-    "start": "npx concurrently 'npm run start:backend' 'npm run start:client'",
+    "start": "npx concurrently 'npm run start:backend' 'npm run start:frontend'",
     "start:backend": "npm --prefix ./back-end start",
     "start:frontend": "npm --prefix ./front-end start",
-    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./front-end\" ",
+    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm run start --prefix ./front-end\" ",
     "test": "npm run test:client && npm run test:backend",
     "start:solution": "docker-compose up --build",
     "test:solution": "docker-compose build && docker-compose run --rm api npm test && docker-compose down"
