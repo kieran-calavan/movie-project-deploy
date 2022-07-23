@@ -1,5 +1,5 @@
 import React from "react";
-import { markdown } from "markdown";
+import { markdown} from "markdown";
 
 const scoreButtonStyle = {
   padding: "0 0px 5px 5px",

@@ -3,13 +3,13 @@ import MoviesList from "./home/MoviesList";
 import DetailedMoviesList from "./movies/DetailedMoviesList";
 import FullMovie from "./movie/FullMovie";
 import TheaterList from "./theaters/TheaterList";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Switch>
+      <Routes>
         <Route exact path="/">
           <MoviesList />
         </Route>
@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/theaters">
           <TheaterList />
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
