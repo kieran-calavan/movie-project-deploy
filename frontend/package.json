@@ -18,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:start:backend": "npm run test:start --prefix ./../backend",
+    "test:start:frontend": "npx cross-env BROWSER=none NODE_ENV=test react-scripts start"
   },
   "eslintConfig": {
     "extends": [
